@@ -1,33 +1,154 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Perfil de Nicole Hidalgo</title>
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-name" content="galaxy" />
+
+    <link href="~/plugins/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/plugins/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <section class="d-flex">
+        <aside>
+            <div class="sidenav position-sticky d-flex flex-column justify-content-between">
+                <br />
+                <div class="navbar navbar-dark my-4 p-0 font-primary">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white px-0" href="@Url.Action("Index", "Home")">Inicio</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-white px-0 " href="@Url.Action("about", "Home")">Sobre mi</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white px-0" href="@Url.Action("contact", "Home")">Contactos</a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+
+                <ul class="list-inline nml-2">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/nicole.hidalgo.9085" class="text-white text-red-onHover p-2">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/nicolehidalgo437" class="text-white text-red-onHover p-2">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/nicole-hidalgo-bba02831a" class="text-white text-red-onHover p-2">
+                            <span class="fab fa-linkedin-in"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Niki2004" class="text-white text-red-onHover p-2">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <div class="container pt-4 mt-5">
+                <div class="row justify-content-between">
+                    <div>
+                        <div class="card post-item bg-transparent border-0 mb-5">
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="images/post/post-lg/01.png" alt="">
+                            </a>
+                            <div class="card-body px-0">
+                                <h2 class="card-title">
+                                    <a class="text-white opacity-75-onHover" href="post-details.html">Id reprehrenderit mollit in tempor naid incididunt cupidatat consectetura</a>
+                                </h2>
+                                <ul class="post-meta mt-3">
+                                    <li class="d-inline-block mr-3">
+                                        <span class="fas fa-clock text-primary"></span>
+                                        <a class="ml-1" href="#">24 April, 2016</a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <span class="fas fa-list-alt text-primary"></span>
+                                        <a class="ml-1" href="#">Photography</a>
+                                    </li>
+                                </ul>
+                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="card post-item bg-transparent border-0 mb-5">
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="images/post/post-lg/02.png" alt="">
+                            </a>
+                            <div class="card-body px-0">
+                                <h2 class="card-title">
+                                    <a class="text-white opacity-75-onHover" href="post-details.html">Excepteur ado Do minim duis laborum Fugiat ea labore qui veniam labore</a>
+                                </h2>
+                                <ul class="post-meta mt-3">
+                                    <li class="d-inline-block mr-3">
+                                        <span class="fas fa-clock text-primary"></span>
+                                        <a class="ml-1" href="#">24 April, 2016</a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <span class="fas fa-list-alt text-primary"></span>
+                                        <a class="ml-1" href="#">Photography</a>
+                                    </li>
+                                </ul>
+                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="card post-item bg-transparent border-0 mb-5">
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="images/post/post-lg/03.png" alt="">
+                            </a>
+                            <div class="card-body px-0">
+                                <h2 class="card-title">
+                                    <a class="text-white opacity-75-onHover" href="post-details.html">Aliquip excepteur cilludm irure laboris sint ea qui ex amet id. Ex nulla etno</a>
+                                </h2>
+                                <ul class="post-meta mt-3">
+                                    <li class="d-inline-block mr-3">
+                                        <span class="fas fa-clock text-primary"></span>
+                                        <a class="ml-1" href="#">24 April, 2016</a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <span class="fas fa-list-alt text-primary"></span>
+                                        <a class="ml-1" href="#">Photography</a>
+                                    </li>
+                                </ul>
+                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
-    </div>
-</main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+</html>
