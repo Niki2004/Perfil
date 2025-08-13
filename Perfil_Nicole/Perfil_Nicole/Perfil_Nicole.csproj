@@ -146,8 +146,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\favicon.png" />
-    <Content Include="images\Logo1-removebg-preview.png" />
+    <Content Include="images\descarga1.jpeg" />
+    <Content Include="images\descarga2.jpeg" />
+    <Content Include="images\descarga3.jpeg" />
+    <Content Include="images\descarga4.jpeg" />
+    <Content Include="images\descarga5.jpeg" />
+    <Content Include="images\perfil.jpg" />
     <Content Include="plugins\bootstrap.min.css" />
     <Content Include="plugins\bootstrap.min.js" />
     <Content Include="plugins\fontawesome\css\all.css" />
