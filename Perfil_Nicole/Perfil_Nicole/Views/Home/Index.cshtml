@@ -12,9 +12,23 @@
     <link href="~/Content/Site.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .perfil-circular {
+            width: 230px !important; 
+            height: 230px !important; 
+            object-fit: cover !important;
+            border-radius: 50% !important;
+            display: block;
+            margin: 0 auto; 
+        }
 
+            .perfil-circular:hover {
+                filter: none !important;
+                transform: none !important;
+            }
+
+    </style>
 </head>
 <body>
 
@@ -69,76 +83,30 @@
                 <div class="row justify-content-between">
                     <div>
                         <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="~/images/descarga1.jpeg" alt="">
+                            <a>
+                                <img class="perfil-circular" src="~/images/perfil.jpg" alt="">
                             </a>
                             <div class="card-body px-0">
                                 <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Estado de estudios</a>
+                                    <a class="text-white opacity-75-onHover">Nicole Hidalgo – Ingeniera en Sistemas de Computación</a>
                                 </h2>
                                 <ul class="post-meta mt-3">
                                     <li class="d-inline-block mr-3">
                                         <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 April, 2016</a>
+                                        <a class="ml-1">15 Agosto, 2025</a>
                                     </li>
                                     <li class="d-inline-block">
                                         <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Photography</a>
+                                        <a class="ml-1">Desarrollo Web y análisis de datos</a>
                                     </li>
                                 </ul>
-                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
-                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+                                <p class="card-text my-4" style="text-align: justify;">Apasionada por la creación de proyectos que combinan creatividad y funcionalidad. Mi experiencia
+                                  abarca desarrollo de páginas web, programación con Arduino, integración de hardware y software, análisis de datos y 
+                                  soluciones personalizadas para cada cliente...</p>
+                                <a href="@Url.Action("about", "Home")" class="btn btn-primary">Sobre mi</a>
                             </div>
                         </div>
-
-                        <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="~/images/descarga2.jpeg" alt="">
-                            </a>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Excepteur ado Do minim duis laborum Fugiat ea labore qui veniam labore</a>
-                                </h2>
-                                <ul class="post-meta mt-3">
-                                    <li class="d-inline-block mr-3">
-                                        <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 April, 2016</a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Photography</a>
-                                    </li>
-                                </ul>
-                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
-                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="~/images/descarga3.jpeg" alt="">
-                            </a>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Aliquip excepteur cilludm irure laboris sint ea qui ex amet id. Ex nulla etno</a>
-                                </h2>
-                                <ul class="post-meta mt-3">
-                                    <li class="d-inline-block mr-3">
-                                        <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 April, 2016</a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Photography</a>
-                                    </li>
-                                </ul>
-                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
-                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
