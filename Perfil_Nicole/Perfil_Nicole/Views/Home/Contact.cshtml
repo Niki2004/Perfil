@@ -15,9 +15,11 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-</head>
-<body>
+    <link href="~/Content/SobreMi.css" rel="stylesheet" />
 
+</head>
+
+<body>
     <section class="d-flex">
         <aside>
             <div class="sidenav position-sticky d-flex flex-column justify-content-between">
@@ -34,7 +36,9 @@
                         <li class="nav-item ">
                             <a class="nav-link text-white px-0" href="@Url.Action("contact", "Home")">Contactos</a>
                         </li>
-
+                        <li class="nav-item ">
+                            <a class="nav-link text-white px-0" href="@Url.Action("Titulos", "Home")">Certificados</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -65,42 +69,78 @@
         </aside>
 
         <div class="main-content">
-            <div class="container pt-4 mt-5">
-                <div class="row justify-content-between">
+            <div class="container py-4 my-5">
+                <div class="row">
                     <div>
-                        <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="images/post/post-lg/01.png" alt="">
-                            </a>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Id reprehrenderit mollit in tempor naid incididunt cupidatat consectetura</a>
-                                </h2>
-                                <ul class="post-meta mt-3">
-                                    <li class="d-inline-block mr-3">
-                                        <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 April, 2016</a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Photography</a>
-                                    </li>
-                                </ul>
-                                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
-                                <a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
 
+                        <h1 class="text-white add-letter-space my-4" style="text-align: center;">Contactos</h1>
+                        <p style="text-align: justify;">
+                            Pueden contactarme a través de diferentes medios, los cuales se mencionan a continuación.
+                            Estoy disponible para responder consultas, coordinar proyectos o colaborar en nuevas iniciativas,
+                            asegurando siempre una comunicación clara, rápida y efectiva.
+                            Me entusiasma la posibilidad de conectar con profesionales, empresas o clientes interesados en mis habilidades y experiencia.
+                        </p> <br />
+
+                        <ul class="list-unstyled">
+                            <li class="bullet-list-item">
+                                <h3 class="text-white mb-3 add-letter-space">Correo Electrónico</h3>
+                                <p style="text-align: justify;">
+                                    Pueden contactarme a través de mi correo electrónico para consultas, proyectos o cualquier información relacionada con mis servicios profesionales.
+                                    Respondo de manera rápida y eficiente.
+                                </p>
+                                <br />
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicolehidalgo437@gmail.com"  target="_blank" class="btn btn-primary">Ir al Correo</a>
+                            </li>
+                        </ul>
+                        <br />
+
+                        <ul class="list-unstyled">
+                            <li class="bullet-list-item">
+                                <h3 class="text-white mb-3 add-letter-space">WhatsApp</h3>
+                                <p style="text-align: justify;">
+                                    También pueden comunicarse conmigo vía WhatsApp para coordinación rápida, consultas o intercambio de información profesional de manera directa y eficiente.
+                                </p>
+                                <br />
+                                <a href="https://wa.me/50688837112" target="_blank" class="btn btn-primary">Ir a WhatsApp</a>
+                            </li>
+                        </ul>
+                        <br />
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Botón para ir arriba -->
+    <button id="btnUp" title="Ir arriba">
+        <i class="fas fa-rocket"></i>
+    </button>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
             document.body.classList.add("loaded");
+        });
+
+        const btnUp = document.getElementById("btnUp");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btnUp.style.display = "block";
+            } else {
+                btnUp.style.display = "none";
+            }
+        };
+
+        // Al hacer click, llevar hacia arriba
+        btnUp.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     </script>
 </body>

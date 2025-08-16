@@ -147,12 +147,14 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\descarga1.jpeg" />
-    <Content Include="images\descarga2.jpeg" />
-    <Content Include="images\descarga3.jpeg" />
-    <Content Include="images\descarga4.jpeg" />
-    <Content Include="images\descarga5.jpeg" />
     <Content Include="images\perfil.jpg" />
+    <Content Include="images\Titulo1.jpg" />
+    <Content Include="images\Titulo2.PNG" />
+    <Content Include="images\Titulo3.PNG" />
+    <Content Include="images\Titulo4.PNG" />
+    <Content Include="images\Titulo5.PNG" />
+    <Content Include="images\Titulo6.PNG" />
+    <Content Include="images\Titulo7.PNG" />
     <Content Include="plugins\bootstrap.min.css" />
     <Content Include="plugins\bootstrap.min.js" />
     <Content Include="plugins\fontawesome\css\all.css" />
@@ -188,6 +190,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Titulos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
